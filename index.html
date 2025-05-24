@@ -1,11 +1,143 @@
-<!DOCTYPE html>
+<!Dindex.htmlOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Caitlyn Correa - Portfolio Site</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- These links are sourced from google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- These links are sourced from <cdnjs> fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- NAVBAR -->
+   <nav>
+    <div class="left">
+      <a href="/">Caitlyn Correa</a>
+    </div>
+
+    <div class="right">
+
+      <a href="https://github.com" target ="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+
+      <a href="https://linkedin.com" target ="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+
+      <a href="mailto:caitlynacorrea0921@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+   </nav>
+
+   <main> 
+    <!-- HERO SECTION -->
+    <section class="hero-section"> 
+      <div class="text">
+        <h2>Hello World, I'm Caitlyn Correa 🌱</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti ex quis non deserunt, tempora voluptatibus magni unde quod odio, temporibus, itaque animi alias consectetur quia fugiat sint culpa ea voluptatem sunt delectus saepe ullam quae dolorum! Ducimus soluta beatae, eligendi neque doloremque iure porro deserunt deleniti odio possimus sunt ex consectetur! Nesciunt illum ratione vel nihil, corrupti iusto, esse voluptas assumenda labore praesentium rem nemo iure illo, mollitia architecto placeat dolores doloremque magni. Dolor.
+        </p>
+      <div class="links"> 
+        <a href="#skills">  
+          <i class="fa-solid fa-code"></i>
+          <span>Skills</span>
+        </a>
+        <a href="#about">  
+          <i class="fa-solid fa-pen"></i>
+          <span>About</span>
+        </a>
+        <a href="#contact">  
+          <i class="fa-solid fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+
+      <div class="headshot">  
+        <img src="img/IMG_2680.JPG" alt="Caitlyn Correa">
+      </div>
+    </section>
+    
+
+    <!-- SKILL SECTION -->
+    <section id="skills" class="skills-section"> 
+      <h2>Skills</h2>
+      <div class="text">  
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla quam sequi repellendus. Vero reprehenderit veniam, repellendus atque similique et officia pariatur ullam suscipit, incidunt tempora aliquid aut odit molestiae quae in nam. Sint adipisci itaque vero at expedita consectetur facilis praesentium quidem perspiciatis molestias. Dicta sit nihil provident obcaecati similique quas a corporis mollitia distinctio quia inventore odio doloremque quo modi, fuga ducimus! Eum ex, rem autem totam ullam sequi libero odio? Quo veritatis ipsam totam aperiam voluptas libero accusamus dolore reiciendis, amet odit numquam sed. Blanditiis, quas voluptas sed tempore minima, dolor ipsa illum soluta suscipit totam qui.
+      </div>
+      <div class="cells">
+        <div class="cell">
+          <img src="img/html-logo.webp" alt="HTML LOGO">
+          <span>HTML</span>
+        </div>
+
+        <div class="cell">
+          <img src="img/css-logo.webp" alt="CSS LOGO">
+          <span>CSS</span>
+        </div>
+
+        <div class="cell">
+          <img src="img/javascript-logo.webp" alt="JavaScript LOGO">
+          <span>JavaScript</span>
+        </div>
+
+        <div class="cell">
+          <img src="img/Godot_icon.svg" alt="GODOT LOGO">
+          <span>Godot</span>
+        </div>
+
+         <div class="cell">
+          <img src="img/Java_programming_language_logo.svg.png" alt="JAVA LOGO">
+          <span>Java</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about"> </section>
+
+    <!-- CONTACT SECTION -->
+    <!-- TODO: implement JavaScript in order to give this section of the site full functionality -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat fugit maiores atque architecto saepe tenetur quasi reiciendis illum sint doloremque alias inventore, asperiores maxime pariatur totam hic assumenda repudiandae, iusto quisquam nisi! Eaque doloremque perspiciatis minus voluptate dicta. A ratione autem dolor iure libero numquam voluptatem nobis laborum et corporis.
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+   </main>
+
+   <!-- Add this footer at the very end of your HTML, before </body> -->
+<footer>
+  <!-- This is your site footer -->
+  <p>&copy; 2025 Caitlyn Correa. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
