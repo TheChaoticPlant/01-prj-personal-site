@@ -360,16 +360,20 @@ footer {
 
 @media (max-width: 700px) {
   .projects-list {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
+    display: flex;              /* Use flexbox for layout */
+    flex-direction: column;     /* Stack cards vertically */
+    align-items: center;        /* Center cards horizontally */
+    gap: 20px;                  /* Space between cards */
   }
   .project-card {
-    max-width: 100%;
-    aspect-ratio: unset;
-    height: auto;
+    width: 90%;                 /* Make cards take most of the screen width */
+    max-width: 350px;           /* Limit the maximum width */
+    margin: 0 auto;             /* Center the card */
+    height: auto;               /* Let the height adjust automatically */
+    aspect-ratio: unset;        /* Remove fixed aspect ratio */
   }
   .project-image {
-    height: 140px;
+    height: 140px;              /* Adjust image height for small screens */
   }
 }
 
@@ -417,9 +421,6 @@ footer {
 }
   /* Responsive tweak for very small screens */
 @media (max-width: 500px) {
-  .projects-list {
-    grid-template-columns: 1fr;
-  }
   .project-image {
     height: 120px;
   }
